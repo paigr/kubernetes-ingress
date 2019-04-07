@@ -65,6 +65,7 @@ Parameter | Description | Default
 `controller.image.repository` | The image repository of the Ingress controller. | nginx/nginx-ingress
 `controller.image.tag` | The tag of the Ingress controller image. | edge
 `controller.image.pullPolicy` | The pull policy for the Ingress controller image. | IfNotPresent
+`controller.config.name` | The name of the ConfigMap used by the Ingress controller container.
 `controller.config.entries` | The entries of the ConfigMap for customizing NGINX configuration. | {}
 `controller.defaultTLS.cert` | The base64-encoded TLS certificate for the default HTTPS server. If not specified, a pre-generated self-signed certificate is used. **Note:** It is recommended that you specify your own certificate. | A pre-generated self-signed certificate.
 `controller.defaultTLS.key` | The base64-encoded TLS key for the default HTTPS server. **Note:** If not specified, a pre-generated key is used. It is recommended that you specify your own key. | A pre-generated key.

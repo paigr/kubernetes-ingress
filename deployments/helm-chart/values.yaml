@@ -25,6 +25,8 @@ controller:
     pullPolicy: IfNotPresent
 
   config:
+    ## The name of the ConfigMap used by the Ingress controller container.
+    name: nginx-config
     ## The entries of the ConfigMap for customizing NGINX configuration.
     entries: {}
 
